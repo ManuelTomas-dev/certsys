@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { cn } from "@/lib/utils"
-import { Home, Users, Building2, ClipboardCheck, ShieldCheck, Briefcase, Settings, TrendingUp, TrendingDown, Bell, CheckCircle2, AlertTriangle, CircleDot, Activity } from 'lucide-react'
+import { Home, Users, Building2, ClipboardCheck, ShieldCheck, Briefcase, Settings, TrendingUp, TrendingDown, Bell, CheckCircle2, AlertTriangle, Activity } from 'lucide-react'
 
 type KPICardProps = {
   title: string
