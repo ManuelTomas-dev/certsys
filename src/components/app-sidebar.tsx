@@ -127,15 +127,6 @@ const modules: NavItem[] = [
     },
 ]
 
-const navItems = [
-    { title: "Dashboard", icon: Home, href: "#" },
-    { title: "Personnel", icon: Inbox, href: "#" },
-    { title: "Customers", icon: Calendar, href: "#" },
-    { title: "Inspection", icon: Search, href: "#" },
-    { title: "QSHE", icon: Settings, href: "#" },
-    { title: "CRM", icon: Settings, href: "#" },
-    { title: "System", icon: Settings, href: "#" },
-]
 
 // Render recursivo de nav com Collapsible
 function MenuTree({ items, level = 0 }: { items: NavItem[]; level?: number }) {
