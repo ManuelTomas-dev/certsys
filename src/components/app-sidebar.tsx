@@ -16,7 +16,7 @@ import {
     SidebarMenuSubItem,
     SidebarRail,
 } from "@/components/ui/sidebar"
-import { BadgeCheck, Briefcase, Building2, Calendar, ChevronDown, ClipboardCheck, ClipboardList, GraduationCap, Home, Inbox, LogOut, LucideIcon, MapPin, Search, Settings, ShieldCheck, Users } from 'lucide-react'
+import { BadgeCheck, Briefcase, Building2, ChevronDown, ClipboardCheck, ClipboardList, GraduationCap, Home, LogOut, LucideIcon, MapPin, Settings, ShieldCheck, Users } from 'lucide-react'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible"
 
 type NavItem = {
