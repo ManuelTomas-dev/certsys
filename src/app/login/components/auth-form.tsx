@@ -15,7 +15,7 @@ import { LoaderPinwheel } from "lucide-react"
 interface AuthFormProps extends React.HTMLAttributes<HTMLDivElement> { }
 
 export function AuthForm({ className, ...props }: AuthFormProps) {
-    const [isLoading, setIsLoading] = React.useState<boolean>(false)
+    const [isLoading,] = React.useState<boolean>(false)
 
     const router = useRouter()
 

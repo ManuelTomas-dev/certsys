@@ -1,9 +1,7 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { AuthForm } from "./components/auth-form";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Home, User } from "lucide-react";
+import { Home } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Authentication",
