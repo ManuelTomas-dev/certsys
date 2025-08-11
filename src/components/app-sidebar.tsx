@@ -41,7 +41,7 @@ const modules: NavItem[] = [
     {
         title: "Customers",
         icon: Building2,
-        items: [{ title: "Cliente", href: "/customers/cliente" }],
+        items: [{ title: "Clients", href: "/customers/clients" }, { title: "Work locations", href: "/customers/work-locations" }],
     },
 
     // Opcional: ajuste/complete conforme seu domínio
