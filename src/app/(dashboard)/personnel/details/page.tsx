@@ -13,21 +13,23 @@ import type { PersonnelFormValues } from "@/components/persennel/personnel/form"
 import { PaginationBar } from "@/components/pagination"
 import { cn } from "@/lib/utils"
 
-type Status = "Ativo" | "Arquivado"
+// type Status = "Ativo" | "Arquivado"
 
-function formatDate(iso: string) {
-  if (!iso) return "-"
-  try {
-    const d = new Date(iso)
-    return d.toLocaleDateString()
-  } catch {
-    return iso
-  }
-}
+// function formatDate(iso: string) {
+//   if (!iso) return "-"
+//   try {
+//     const d = new Date(iso)
+//     return d.toLocaleDateString()
+//   } catch {
+//     return iso
+//   }
+// }
 
 export default function PersonnelPage() {
   const { toast } = useToast()
-  const [isPending, startTransition] = useTransition()
+  const [
+    // isPending
+    , startTransition] = useTransition()
   const [data, setData] = useState<Personnel[]>(() => makeMockPersonnel())
   const [filters, setFilters] = useState<Filters>({
     busca: "",

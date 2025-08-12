@@ -17,7 +17,9 @@ import { cn } from "@/lib/utils"
 
 export default function ClientsPage() {
   const { toast } = useToast()
-  const [isPending, startTransition] = useTransition()
+  const [
+    // isPending
+    , startTransition] = useTransition()
   const [data, setData] = useState<Client[]>(() => makeMockClients())
   const [filters, setFilters] = useState<ClientFilters>({ busca: "", status: "Todos", pais: "Todos", cidade: "Todos" })
 

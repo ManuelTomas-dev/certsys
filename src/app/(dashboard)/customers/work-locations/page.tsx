@@ -19,10 +19,14 @@ import { cn } from "@/lib/utils"
 
 export default function WorkLocationsPage() {
   const { toast } = useToast()
-  const [isPending, startTransition] = useTransition()
+  const [
+    // isPending
+    , startTransition] = useTransition()
 
   // Mock clients to associate
-  const [clients, setClients] = useState<Client[]>(() => makeMockClients(14))
+  const [clients,
+    //  setClients
+    ] = useState<Client[]>(() => makeMockClients(14))
   const [data, setData] = useState<WorkLocation[]>(() => makeMockWorkLocations(clients))
 
   const [filters, setFilters] = useState<WorkLocationFilters>({
@@ -42,6 +46,7 @@ export default function WorkLocationsPage() {
   // Pagination
   const [page, setPage] = useState(1)
   const [pageSize, setPageSize] = useState(10)
+
   useEffect(() => {
     setPage(1)
   }, [filters, pageSize])
@@ -139,11 +144,11 @@ export default function WorkLocationsPage() {
         prev.map((item) =>
           item.id === current.id
             ? ({
-                ...item,
-                ...values,
-                clientName,
-                atualizadoEm: now,
-              } as WorkLocation)
+              ...item,
+              ...values,
+              clientName,
+              atualizadoEm: now,
+            } as WorkLocation)
             : item,
         ),
       )
@@ -154,6 +159,7 @@ export default function WorkLocationsPage() {
 
   // Entrance transition
   const [mounted, setMounted] = useState(false)
+
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 50)
     return () => clearTimeout(t)

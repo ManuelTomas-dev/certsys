@@ -28,7 +28,9 @@ const defaultFilters: Filters = { busca: "", status: "Todos" }
 
 export default function FuncoesPage() {
   const { toast } = useToast()
-  const [isPending, startTransition] = useTransition()
+  const [
+    // isPending
+    , startTransition] = useTransition()
   const [data, setData] = useState<Funcao[]>(() => makeMockFunctions())
   const [filters, setFilters] = useState<Filters>(defaultFilters)
 
