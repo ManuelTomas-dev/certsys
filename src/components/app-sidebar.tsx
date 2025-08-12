@@ -34,7 +34,7 @@ const modules: NavItem[] = [
         icon: Users,
         items: [
             { title: "Details", href: "/personnel/details" },
-            { title: "Function", href: "/personnel/function" },
+            { title: "Function", href: "/personnel/functions" },
         ],
     },
 
@@ -56,7 +56,7 @@ const modules: NavItem[] = [
     {
         title: "Inspection",
         icon: ClipboardCheck,
-        href: "/inspection",
+        href: "/inspections",
     },
 
     {
