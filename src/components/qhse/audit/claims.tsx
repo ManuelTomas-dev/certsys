@@ -377,3 +377,5 @@ export default function ClaimsPage() {
   )
 }
 
+export { ClaimsPage as Claims }
+

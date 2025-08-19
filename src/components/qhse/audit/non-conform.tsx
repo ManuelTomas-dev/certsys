@@ -412,3 +412,5 @@ export default function NonConformPage() {
     </div>
   )
 }
+
+export { NonConformPage as NonConform }
