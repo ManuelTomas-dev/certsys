@@ -154,13 +154,13 @@ export default function InspectionsPage() {
         prev.map((item) =>
           item.id === current.id
             ? ({
-                ...item,
-                ...values,
-                clientName: client?.nome ?? item.clientName,
-                workLocationName: workLocation?.nome ?? item.workLocationName,
-                inspectorName: inspector ? `${inspector.nome} ${inspector.sobrenome}` : item.inspectorName,
-                atualizadoEm: now,
-              } as Inspection)
+              ...item,
+              ...values,
+              clientName: client?.nome ?? item.clientName,
+              workLocationName: workLocation?.nome ?? item.workLocationName,
+              inspectorName: inspector ? `${inspector.nome} ${inspector.sobrenome}` : item.inspectorName,
+              atualizadoEm: now,
+            } as Inspection)
             : item,
         ),
       )

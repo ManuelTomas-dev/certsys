@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Download, Filter, UserCircle2 } from "lucide-react";
 
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: {
   children: React.ReactNode;

@@ -45,13 +45,13 @@ const modules: NavItem[] = [
     },
 
     // Opcional: ajuste/complete conforme seu domínio
-    {
-        title: "Work Location",
-        icon: MapPin,
-        items: [
-            { title: "Locations", href: "/work-location/locations" },
-        ],
-    },
+    // {
+    //     title: "Work Location",
+    //     icon: MapPin,
+    //     items: [
+    //         { title: "Locations", href: "/work-location/locations" },
+    //     ],
+    // },
 
     {
         title: "Inspection",
@@ -71,6 +71,8 @@ const modules: NavItem[] = [
     {
         title: "QSHE",
         icon: ShieldCheck,
+        href: "/qshe",
+
         items: [
             {
                 title: "Quality",
